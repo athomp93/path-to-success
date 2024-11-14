@@ -312,8 +312,8 @@ header {
   text-align: center;
   font-weight: 600;
   border-radius: 15px;
-  padding: 30px 55px 30px 55px;
-  max-width: 10rem;
+  padding: 30px 50px;
+  max-width: 5rem;
 }
 
 .pricing h2 {
@@ -336,7 +336,7 @@ header {
 .price-table th {
   background-color: var(--yellow);
   color: var(--dk-gray);
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -453,24 +453,32 @@ header {
     font-size: .9em;
   }
 
-  .services h4, .services img {
+  .services h4,
+  .services img {
     padding-left: 20px;
   }
 
   .ppsf {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     gap: 10px;
   }
 
   .pers-proven {
+    display: flex;
     gap: 10px;
     padding-left: 10px;
+    justify-content: space-evenly;
+    width: 100%;
   }
 
   .supp-flex {
+    display: flex;
+    justify-content: space-evenly;
     gap: 10px;
     padding-right: 10px;
+    width: 100%;
   }
 
   .personalized {
@@ -479,6 +487,7 @@ header {
 
   .flexible {
     padding: 30px 20px 30px 20px;
+    max-width: 8rem;
   }
 
   .t1 {
@@ -529,10 +538,155 @@ header {
   h2 {
     font-size: 1.7em;
   }
-
-
 }
 
-
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
-/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media (min-width: 950px) {
+
+  .menu {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 999;
+    padding: 15px 0px 15px 40px;
+    background-color: var(--yellow);
+    border-radius: 0 0 10px 15px;
+    font-size: .75em;
+    font-weight: 600;
+    color: var(--dk-gray);
+  }
+
+  .nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+  }
+
+  .nav li {
+    margin-right: 50px;
+  }
+
+  .services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .service-title {
+    display: flex;
+    font-size: .9em;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .one-on-one,
+  .group-coaching,
+  .workshops,
+  .online {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .coaching-section {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+
+  .services img {
+    max-width: 50%;
+    max-height: auto;
+    padding: 10px 0px 0px 10px;
+  }
+
+  .services h4 {
+    padding-left: 10px;
+    padding-bottom: 0;
+    font-size: .8em;
+    white-space: nowrap;
+  }
+
+  .services p {
+    padding: 0px 10px 10px;
+    font-size: .6em;
+  }
+
+  .choose-us {
+    width: 100%;
+  }
+
+  .choose-us h2 {
+    margin-bottom: 10px;
+  }
+
+  .personalized, .proven, .supportive, .flexible {
+    max-width: 50%;
+    text-align: center;
+    font-size: .9em;
+  }
+
+  .personalized {
+    padding: 25px 20px 20px 20px;
+  }
+
+  .proven {
+    padding: 25px 50px 20px 50px;
+  }
+
+  .supportive {
+    padding: 5px 20px 30px 20px;
+  }
+
+  .flexible {
+    padding: 30px 40px 50px 40px;
+  }
+
+  .ppsf {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+
+  .choose-us h4 {
+    font-size: 1em;
+    white-space: nowrap;
+  }
+
+  .t1-t4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .t1-t2, .t3-t4 {
+    justify-content: space-evenly;
+    margin-left: 0;
+  }
+
+  .pricing h3 {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .price-table th, .price-table td {
+    font-size: .8em;
+  }
+
+
+  /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
