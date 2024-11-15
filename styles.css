@@ -611,7 +611,6 @@ header {
 
   .services img {
     max-width: 50%;
-    max-height: auto;
     padding: 10px 0px 0px 10px;
   }
 
@@ -706,6 +705,30 @@ header {
     flex-basis: 53%;
     font-size: .8em;
   }
-
+}
   /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-  
+  @media (min-width: 1280px) {
+
+    /* .h1 {
+      width: 76%;
+      margin: 0 auto;
+    }
+
+    .p2 {
+      width: 75%;
+    }
+
+    .services-container {
+      margin: 0 130px;
+      justify-content: space-around;
+    }
+
+    .services {
+      padding: 0 30px;
+    }
+
+    .services img {
+      max-width: 45%;
+    } */
+
+  }
